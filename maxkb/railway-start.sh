@@ -44,6 +44,7 @@ log "Postgres ready, pgvector enabled"
 # ---- volume layout (same as upstream start-maxkb.sh) ----
 mkdir -p /opt/maxkb/logs /opt/maxkb/local /opt/maxkb/python-packages
 chmod 700 /opt/maxkb/logs /opt/maxkb/local
+mkdir -p /opt/maxkb-app/tmp && chmod 700 /opt/maxkb-app/tmp
 rm -f /opt/maxkb-app/tmp/* 2>/dev/null || true
 
 # ---- migrations, one deploy at a time (overlapping deploys share the database) ----
