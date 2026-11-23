@@ -12,5 +12,4 @@ ENV POSTGRES_PASSWORD= \
 COPY --chmod=500 railway-start.sh /usr/bin/railway-start.sh
 
 EXPOSE 8080
-VOLUME /opt/maxkb
 ENTRYPOINT ["/usr/bin/railway-start.sh"]
