@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/maxkb-1?utm_medium=integration&utm_source=button&utm_campaign=maxkb)
+
 # MaxKB on Railway
 
 One-click Railway template for [MaxKB](https://github.com/1Panel-dev/MaxKB), the open-source platform for RAG knowledge bases and AI agents.
