@@ -37,7 +37,7 @@ Optional, read by the start script if you add them: `MAXKB_CORE_WORKER` (web wor
 
 ## Resources
 
-MaxKB runs three Python processes (web, local embedding model, task worker). It needs about **1.3 GB of RAM idle and 2 GB once the built-in embedding model has run**, so it doesn't fit Railway's Free or Trial plan (0.5 GB per service). Use the Hobby plan or higher. If MaxKB stops unexpectedly, the start script exits non-zero and Railway restarts the service.
+MaxKB runs three Python processes (web, local embedding model, task worker). On Railway it used **about 1.5 to 2.5 GB of RAM** (2.15 GB after the built-in embedding model had run), so plan for at least 2.5 GB. It doesn't fit Railway's Free or Trial plan (0.5 GB per service): tested at 0.5 GB, its processes are killed for lack of memory during start-up. Use the Hobby plan or higher. If MaxKB stops unexpectedly, the start script exits non-zero and Railway restarts the service.
 
 ## Notes
 
